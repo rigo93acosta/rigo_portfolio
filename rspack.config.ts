@@ -40,6 +40,13 @@ const config = defineConfig({
             'css-loader'
         ], 
         type: 'javascript/auto',
+      },
+      {
+        test: /\.svg$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[hash][ext][query]'
+        }
       }
     ],
   },
