@@ -1,0 +1,7 @@
+{
+  "name": "rigo-portfolio",
+  "description": "Professional portfolio - Telecommunications Engineer, PhD Candidate",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "previewPort": 8080
+}
