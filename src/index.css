@@ -27,7 +27,7 @@ html, body, #root {
 
 body {
   font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1f4b 50%, #0f1629 100%);
+  background: #0a0e27;
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -36,6 +36,39 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 217, 255, 0.08) 0%, transparent 50%);
+  background-size: 50px 50px, 50px 50px, 100% 100%, 100% 100%;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  pointer-events: none;
+  z-index: 1;
+  animation: gridShift 20s linear infinite;
+}
+
+@keyframes gridShift {
+  0% {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 50px 50px, 50px 50px, 0 0, 0 0;
+  }
+}
+
+html, body, #root {
+  position: relative;
 }
 
 /* Scrollbar */

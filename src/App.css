@@ -21,7 +21,7 @@ html, body, #root {
 
 body {
   font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1f4b 100%);
+  background: #0a0e27;
   color: var(--text-primary);
   line-height: 1.6;
 }
@@ -31,6 +31,8 @@ body {
   margin: 0 auto;
   padding: 2rem;
   min-height: 100vh;
+  position: relative;
+  z-index: 10;
 }
 
 header {
