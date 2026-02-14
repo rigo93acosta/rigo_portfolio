@@ -1,12 +1,12 @@
 /* src/App.css */
 :root {
-  --bg-color: #1e1e2e; /* Fondo estilo LazyVim/Catppuccin */
-  --card-bg: #2b2b3b;
-  --text-primary: #cdd6f4;
-  --text-secondary: #a6adc8;
-  --accent: #89b4fa; /* Un azul suave */
-  --accent-hover: #b4befe;
-  --border-color: #313244;
+  --bg-color: #0a0e27; /* Azul muy oscuro */
+  --card-bg: #0f1629;
+  --text-primary: #f0f4ff;
+  --text-secondary: #8892b0;
+  --accent: #00d9ff; /* Cyan eléctrico */
+  --accent-hover: #00aed6;
+  --border-color: #1e2849;
 }
 
 * {
@@ -21,7 +21,7 @@ html, body, #root {
 
 body {
   font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
-  background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%);
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f4b 100%);
   color: var(--text-primary);
   line-height: 1.6;
 }
@@ -107,8 +107,8 @@ section:nth-of-type(7) { animation-delay: 0.6s; }
 
 .badge {
   display: inline-block;
-  background: linear-gradient(135deg, #45475a 0%, #3c3d4a 100%);
-  color: #cdd6f4;
+  background: linear-gradient(135deg, #1e2849 0%, #172041 100%);
+  color: #f0f4ff;
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
   font-size: 0.85rem;
@@ -121,14 +121,14 @@ section:nth-of-type(7) { animation-delay: 0.6s; }
 }
 
 .badge:hover {
-  background: linear-gradient(135deg, #89b4fa 0%, #b4befe 100%);
-  color: #1e1e2e;
+  background: linear-gradient(135deg, #00d9ff 0%, #6366f1 100%);
+  color: #0a0e27;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(137, 180, 250, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
 }
 
 .card {
-  background: rgba(43, 43, 59, 0.6);
+  background: rgba(15, 22, 41, 0.6);
   backdrop-filter: blur(10px);
   padding: 2rem;
   border-radius: 12px;
@@ -151,7 +151,7 @@ section:nth-of-type(7) { animation-delay: 0.6s; }
 
 .card:hover {
   border-color: var(--accent);
-  box-shadow: 0 8px 24px rgba(137, 180, 250, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.2);
   transform: translateY(-2px);
 }
 
@@ -219,7 +219,7 @@ section h2 {
 }
 
 section h2:hover {
-  text-shadow: 0 0 20px rgba(137, 180, 250, 0.6);
+  text-shadow: 0 0 20px rgba(0, 217, 255, 0.6);
 }
 
 /* Parallax effect for cards */
